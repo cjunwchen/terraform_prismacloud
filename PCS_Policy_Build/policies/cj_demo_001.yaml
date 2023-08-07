@@ -1,0 +1,14 @@
+---
+metadata:
+  name: "cj demo build policy"
+  guidelines: "fix it"
+  category: "general"
+  severity: "high"
+scope:
+  provider: "aws"
+definition:
+  cond_type: "attribute"
+  resource_types: "aws_instance"
+  attribute: "instance_type"
+  operator: "not_equals"
+  value: "t2.nano"

@@ -1,0 +1,1 @@
+config from cloud.resource where cloud.type = 'aws' AND api.name = 'aws-ec2-describe-instances' AND json.rule =  iamInstanceProfile.arn does not exist and state.code equals 16
