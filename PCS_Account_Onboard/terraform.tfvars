@@ -1,5 +1,5 @@
 pcs-aws-mgmt-account-id = "aws management payer account id"
 pcs-aws-iam-org-stack-name = "cj-pcs-app"
-pcs-aws-iam-org-stack-root-ou-id = "r-529p"
+pcs-aws-iam-org-stack-root-ou-id = "root ou id"
 pcs-aws-iam-org-stack-iam-role-name = "cj-pcs-iam-role"
 pcs-cloud-acc-name = "CJ-AWSCT-2"
