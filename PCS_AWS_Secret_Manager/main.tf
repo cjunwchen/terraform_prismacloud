@@ -1,3 +1,5 @@
+# Store the prisma cloud credential in AWS Secret Manager
+
 provider "aws" {
   region = "ap-southeast-1"
 }
