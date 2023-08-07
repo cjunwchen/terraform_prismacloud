@@ -1,3 +1,5 @@
+# The script extract Prisma Cloud Credential from AWS Secret manager, and use checkov to integrate with Prisma Cloud for scanning
+
 #!/bin/bash
 
 REGION="ap-southeast-1"
