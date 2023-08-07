@@ -12,7 +12,7 @@ terraform {
 }
 
 data "aws_secretsmanager_secret" "prisma_cloud_cred" {
-  arn = "arn:aws:secretsmanager:ap-southeast-1:319725399868:secret:PrismaCloud_CED-VAeRX0"
+  arn = [arn of AWS Secret ID for Prisma Cloud Credential]
 }
 
 data "aws_secretsmanager_secret_version" "current" {
@@ -23,8 +23,6 @@ provider "prismacloud" {
     url= jsondecode(data.aws_secretsmanager_secret_version.current.secret_string)["pcs-url"]
     username= jsondecode(data.aws_secretsmanager_secret_version.current.secret_string)["pcs-username"]
     password= jsondecode(data.aws_secretsmanager_secret_version.current.secret_string)["pcs-password"]
-
-    #pcs-tenant = "Palo Alto Networks (TEST ACCT) - 265229206683231531"
 
     protocol= "https"
     port= "443"
